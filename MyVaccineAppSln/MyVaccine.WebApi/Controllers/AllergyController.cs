@@ -1,10 +1,7 @@
 ﻿using FluentValidation;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MyVaccine.WebApi.Dtos.Allergy;
-using MyVaccine.WebApi.Dtos.Dependent;
 using MyVaccine.WebApi.Services.Contracts;
-using MyVaccine.WebApi.Services.Implementations;
 
 namespace MyVaccine.WebApi.Controllers
 {
@@ -17,8 +14,8 @@ namespace MyVaccine.WebApi.Controllers
 
         public AllergyController(IAllergyServices allergyServices, IValidator<AllergyRequestDto> validator)
         {
-            _allergyServices=allergyServices;
-            _validator=validator;
+            _allergyServices = allergyServices;
+            _validator = validator;
         }
 
         [HttpGet]

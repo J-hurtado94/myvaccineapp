@@ -1,4 +1,5 @@
-﻿namespace MyVaccine.WebApi.Models
+﻿
+namespace MyVaccine.WebApi.Models
 {
     public class Dependent:BaseTable
     {
